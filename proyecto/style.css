@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     min-width: 768px;
 }
@@ -74,7 +75,7 @@ body{
 
 .main-title{
     position: absolute;
-    font-family: "Gulfs Display", "sans-serif";
+    font-family: "Gulfs Display", sans-serif;
     color: #0061ff;
     text-align: center;
     font-size: 4rem;
@@ -83,15 +84,12 @@ body{
     width: 86%;
 }
 
-
-
 .circle{
     position: absolute;
     width: 10rem;
     left: 116px;
     bottom: -387px;
 }
-
 
 /* Seccion nosotors*/
 
@@ -106,7 +104,6 @@ body{
     position: relative;
     margin: 50px ;
 }
-
 
 
 .about-shape{
@@ -138,32 +135,149 @@ body{
     font-weight: bold;
 }
 
-
 .nosotros-nupcia{
     display: flex;
+    align-items: start;
+    margin-bottom: 30px;
+
 }
 
-
 .nupcia{
-
     font-size: 1.3rem;
     margin-top: 30px;
     font-family: "Gulfs Display";
 }
 
+.rigns{
+    width: 100px;
+}
+
+.about-start{
+    width: 100px;
+    height: 97px;
+}
 
 
+/* Principal foto fiesta */
+.img-fiesta{
+    position: relative;
+    width: 100%;
+    height: 520px;
+}
+/* ----- */
 .fiesta-uno{
     width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     border: 1px solid black;
-    transform: rotate(-3deg); /* Rota la imagen 45 grados */
+    transform: rotate(-3deg); 
+    height: 100%;
 }
+
+
 .fiesta-uno img{
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.fiesta-tres, .fiesta-dos{
+    position: absolute;
+    transform: rotate(-3deg);
+    background-color: #feb4cd;
     border: 1px solid black;
+}
+
+.fiesta-dos{
+    width: 399px;
+    height: 529px;
+    bottom: -17px;
+    left: 45px;
+}
+
+.fiesta-tres{
+    width: 406px;
+    height: 522px;
+    bottom: -32px;
+    left: 31px;
+}
+
+
+/* Chat */
+.chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-color: #fff35f;
+    position: fixed;
+    bottom: 0;
+    right: 124px;;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+/* Precios */
+
+.precios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4,1fr);
     
 }
+
+.construye, .horas{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-column: 1/-1;
+    background-color: #feb4cd;
+    padding-top: 30px 20px 30px 20px;
+}
+
+.construye p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 29%;
+    color:#ff6542;
+    font-size: 2rem;
+    font-family: "Gulfs Display";
+    line-height: 1;
+}
+
+
+
+.horas p{
+   
+    font-family: "Gulfs Display";
+    color: #0061ff;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
