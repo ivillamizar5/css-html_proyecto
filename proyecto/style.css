@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face{
+    font-family: "Gulfs Display";
+    src: url(/fonts/GulfsDisplay-Normal.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    min-width: 768px;
+}
+
+.principal{
+    position: relative;
+    background-color: #feb4cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    border-bottom: 1px solid black;
+}
+
+.raya{
+    position: absolute;
+    width: 5rem;
+    right: 18px;
+    bottom: 132px;
+
+}
+
+.start{
+    position: absolute;
+    width: 3rem;
+    left: 12px;
+    bottom: 107px;
+}
+
+.start-pequenna{  
+    position: absolute;
+    width: 1rem;
+    left: 48px;
+}
+
+.start-pequenna-dos{
+    position: absolute;
+    width: 1rem;
+    right: 46px;
+    bottom: 92px;
+}
+
+.main-title{
+    position: absolute;
+    font-family: "Gulfs Display","sans-serif";
+    color: #0061ff;
+    text-align: center;
+    font-size: 3.8rem;
+    line-height:1;/* Espaciado entre lineas */
+    width: 70%;
+}
+
+
+.principal-boda{
+    position: relative;
+    width: 22rem;
+    border-radius: 34%;
+    bottom: -288px;
+    border: 1px solid black;
+
+}
+
+
+.nosotros{
+    background-color: #fff35f;
+    height: 60%;
+}
+
+.circle{
+    position: absolute;
+    width: 8rem;
+    left: 170px;
+    bottom: 72px;
+}
+
+
+
