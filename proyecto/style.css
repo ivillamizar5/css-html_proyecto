@@ -2,90 +2,168 @@
 
 @font-face{
     font-family: "Gulfs Display";
-    src: url(/fonts/GulfsDisplay-Normal.ttf);
+    src: url(./fonts/GulfsDisplay-Normal.ttf);
 }
-
 
 *{
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
-    height: 100vh;
+    padding: 0;
+}
+body{
     min-width: 768px;
 }
+
 
 .principal{
     position: relative;
     background-color: #feb4cd;
+    width: 100%;
+    border-bottom: 3px solid black;
+} 
+ 
+.principal-info{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60%;
-    border-bottom: 1px solid black;
+    height: 722px;
+}
+
+
+.principal-contenedor-img{
+    position: absolute;
+    height: 658px;
+    width: 26rem;
+    bottom: -364px;
+    border: 1px solid black;
+    background-image: url(./img/principalboda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50% / 30%; /* Redondea solo las esquinas superior e inferior */
 }
 
 .raya{
     position: absolute;
-    width: 5rem;
-    right: 18px;
-    bottom: 132px;
+    width: 7rem;
+    right: 56px;
+    bottom: 184px;
 
 }
 
 .start{
     position: absolute;
     width: 3rem;
-    left: 12px;
-    bottom: 107px;
+    left: 67px;
+    bottom: 91px;
 }
 
 .start-pequenna{  
     position: absolute;
-    width: 1rem;
-    left: 48px;
+    width: 2rem;
+    left: 105px;
+    bottom: 350px;
 }
 
 .start-pequenna-dos{
     position: absolute;
-    width: 1rem;
-    right: 46px;
-    bottom: 92px;
+    width: 2rem;
+    right: 85px;
+    bottom: 54px;
 }
 
 .main-title{
     position: absolute;
-    font-family: "Gulfs Display","sans-serif";
+    font-family: "Gulfs Display", "sans-serif";
     color: #0061ff;
     text-align: center;
-    font-size: 3.8rem;
-    line-height:1;/* Espaciado entre lineas */
-    width: 70%;
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: 4px;
+    width: 86%;
 }
 
 
-.principal-boda{
-    position: relative;
-    width: 22rem;
-    border-radius: 34%;
-    bottom: -288px;
-    border: 1px solid black;
-
-}
-
-
-.nosotros{
-    background-color: #fff35f;
-    height: 60%;
-}
 
 .circle{
     position: absolute;
-    width: 8rem;
-    left: 170px;
-    bottom: 72px;
+    width: 10rem;
+    left: 116px;
+    bottom: -387px;
 }
 
 
+/* Seccion nosotors*/
+
+.nosotros{
+    background-color: #fff35f;
+    padding-top: 426px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.content-info{
+    position: relative;
+    margin: 50px ;
+}
+
+
+
+.about-shape{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about-shape img{
+    width: 60px;
+    height: 60px;
+}
+
+
+.content-info h1{
+    color: #fff35f;
+    font-size: 7rem;
+    font-family: "Gulfs Display", sans-serif;
+    -webkit-text-stroke: 1px #0061ff;
+    line-height: 0.8;
+    margin-bottom: 40px;
+}
+
+.nosotros-parrafo{
+    font-family: sans-serif;
+    font-size: 2.1rem;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+
+.nosotros-nupcia{
+    display: flex;
+}
+
+
+.nupcia{
+
+    font-size: 1.3rem;
+    margin-top: 30px;
+    font-family: "Gulfs Display";
+}
+
+
+
+.fiesta-uno{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    transform: rotate(-3deg); /* Rota la imagen 45 grados */
+}
+.fiesta-uno img{
+    width: 100%;
+    border: 1px solid black;
+    
+}
 
