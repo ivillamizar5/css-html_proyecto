@@ -36,7 +36,6 @@ body{
     width: 90%;
 }
 
-
 .principal-contenedor-img{
     position: absolute;
     height: 658px;
@@ -80,7 +79,7 @@ body{
 }
 
 .main-title{
-    position: absolute;
+    z-index: 1;
     font-family: "Gulfs Display", sans-serif;
     color: #0061ff;
     text-align: center;
@@ -245,9 +244,11 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4,1fr);
     
+    
 }
 
 .construye, .horas{
+    
     display: flex;
     justify-content: center;
     align-content: center;
@@ -266,26 +267,34 @@ body{
     line-height: 1;
 }
 
-.horas{
+.content-horas{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+.titulo-sesion, .video p, .solo p, .cabina p{
+    font-family: "Gulfs Display";
+    font-size: 2rem;
     display: flex;
+    align-items: start;
     justify-content: center;
-    flex-direction: column
-    
 }
 
 .horas p{
+    font-family: "Gulfs Display";
+    font-size: 2rem;
     display: flex;
     align-items: start;
-    font-family: "Gulfs Display";
     color: #0061ff;
-    font-size: 1.5rem;
 }
 
 
 .horas-totales{
     display: flex;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: center;
     width: 100%;
 }
 
@@ -315,19 +324,27 @@ body{
     position: relative;
     width: 50%;
     margin: 0 auto;
+    margin-top: 80px;
+    height: 50px;
 }
 
 
 .slider-img{
+    position: absolute;
     width: 100px;
     height: 100px;
+    bottom: 0;
+    left: 8px;
 }
 
 hr{
-    height: 10px;
+    height: 15px;
     background-color: #fff35f;
     border-radius: 5px;
 }
+
+
+
 
 
 
