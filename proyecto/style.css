@@ -227,6 +227,7 @@ body{
     bottom: 0;
     right: 124px;;
     border: 1px solid black;
+    z-index: 2;
 }
 
 
@@ -274,19 +275,38 @@ body{
 
 
 
-.titulo-sesion, .video p, .solo p, .cabina p{
+.sesion, .video, .solo, .cabina{
     font-family: "Gulfs Display";
     font-size: 2rem;
-    display: flex;
-    align-items: start;
-    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
 }
 
+.titulo-sesion{
+
+}
+
+.interrogante-sesion{
+    background-color: #ff6542;
+    color: #fff35f;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 3px 7px 3px 7px;
+    border-radius: 100%;
+    font-size: 1rem;
+   
+   
+}
+.sesion p {
+   width: 100%;
+    color: #ff6542;
+}
+
+
 .horas p{
+    padding-top: 6px;
     font-family: "Gulfs Display";
     font-size: 2rem;
-    display: flex;
-    align-items: start;
     color: #0061ff;
 }
 
@@ -296,6 +316,13 @@ body{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+}
+
+
+.title-horas, .titulo-sesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .interrogante{
