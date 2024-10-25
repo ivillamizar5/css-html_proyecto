@@ -21,13 +21,19 @@ body{
     background-color: #feb4cd;
     width: 100%;
     border-bottom: 3px solid black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
  
 .principal-info{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 722px;
+    width: 90%;
 }
 
 
@@ -163,6 +169,7 @@ body{
     position: relative;
     width: 100%;
     height: 520px;
+    padding-bottom: 100px;
 }
 /* ----- */
 .fiesta-uno{
@@ -191,16 +198,16 @@ body{
 }
 
 .fiesta-dos{
-    width: 399px;
-    height: 529px;
-    bottom: -17px;
+    width: 456px;
+    height: 423px;
+    bottom: 80px;
     left: 45px;
 }
 
 .fiesta-tres{
-    width: 406px;
-    height: 522px;
-    bottom: -32px;
+    width: 443px;
+    height: 419px;
+    bottom: 62px;
     left: 31px;
 }
 
@@ -252,21 +259,82 @@ body{
 .construye p{
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 29%;
-    color:#ff6542;
-    font-size: 2rem;
-    font-family: "Gulfs Display";
+    width: 50%;
+    color: #ff6542;
+    font-size: 4rem;
+    font-family: "Gulfs Display", sans-serif;
     line-height: 1;
 }
 
-
+.horas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+    
+}
 
 .horas p{
-   
+    display: flex;
+    align-items: start;
     font-family: "Gulfs Display";
     color: #0061ff;
     font-size: 1.5rem;
 }
+
+
+.horas-totales{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+}
+
+.interrogante{
+    background-color: #0061ff;
+    color: #feb4cd;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 3px 7px 3px 7px;
+    border-radius: 100%;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+.numero-tres{
+    background-color: #0061ff;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 3px 7px 3px 7px;
+    border-radius: 100%;
+    font-size: 1rem;
+    margin-left: 5px;
+    border: 1px solid black;
+}
+
+.slider{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.slider-img{
+    width: 100px;
+    height: 100px;
+}
+
+hr{
+    height: 10px;
+    background-color: #fff35f;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
 
 
 
