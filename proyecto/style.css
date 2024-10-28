@@ -1,433 +1,1627 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap");
 
-@font-face{
-    font-family: "Gulfs Display";
-    src: url(./fonts/GulfsDisplay-Normal.ttf);
+@font-face {
+  font-family: "Gulfs Display";
+  src: url(./fonts/GulfsDisplay-Normal.ttf);
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    min-width: 768px;
-}
-
-
-.principal{
-    position: relative;
+header{
+    height: 100px;
     background-color: #feb4cd;
-    width: 100%;
-    border-bottom: 3px solid black;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
- 
-.principal-info{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 722px;
-    min-width: 79px;
 }
 
-.principal-contenedor-img{
-    position: absolute;
-    height: 658px;
-    width: 26rem;
-    bottom: -364px;
+.btn-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border: 1px solid black;
-    background-image: url(./img/principalboda.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50% / 30%; /* Redondea solo las esquinas superior e inferior */
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 1px 1px 0px 1px black;
+
+    /*
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85px;
+        border: 1px solid black;
+        border-radius: 100%;
+        height: 74px;
+        margin-top: 10px;
+        margin-bottom: 16px;
+    
+    */
 }
 
-.raya{
+
+.btn-hamburguesa{
+    width: 37px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+
+.ul-links{
+    list-style: none;
+    width: 100%;
     position: absolute;
-    width: 7rem;
-    right: 56px;
-    bottom: 184px;
-
-}
-
-.start{
-    position: absolute;
-    width: 3rem;
-    left: 67px;
-    bottom: 91px;
-}
-
-.start-pequenna{  
-    position: absolute;
-    width: 2rem;
-    left: 105px;
-    bottom: 350px;
-}
-
-.start-pequenna-dos{
-    position: absolute;
-    width: 2rem;
-    right: 85px;
-    bottom: 54px;
-}
-
-.main-title{
+    top: 100px;
+    background-color: #feb4cd;
     z-index: 1;
-    font-family: "Gulfs Display", sans-serif;
-    color: #0061ff;
-    text-align: center;
-    font-size: 4rem;
-    line-height: 1;
-    letter-spacing: 4px;
-    width: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    align-content: flex-end;
+    height: 0;
+    overflow: hidden;
 }
 
-.circle{
+.label-hamburguesa{
+    margin-right: 30px;
+    margin-right: 30px;
+  display: flex;
+  position: relative;
+
+}
+
+.menu-hamburguesa:checked + .label-hamburguesa + .ul-links{  /*  + selecciona el primer elemento */
+    height: 200px;
+}
+
+.btn-x{
+    display: none;
+    width: 30px;
+}
+
+.menu-hamburguesa:checked ~ label span .btn-x{  /* ~ Selecciona a todos los elementos que tiene la clase .btn-x*/
+    display: block;
+}
+.menu-hamburguesa:checked ~ label span .btn-hamburguesa{
+    display: none;
+
+}
+
+
+
+.ul-links li{
+    width: 170px;
+}
+
+.li-link{
+    display: flex;
+    cursor: pointer;
+}
+
+.li-link img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Gulfs Display";
+    color: black;
+}
+
+
+.menu-hamburguesa, .about-shape-info div{
+    display: none;
+}
+
+
+
+
+.btn-hamburguesa{
+    cursor: pointer;
+}
+
+/*PRINCIPAL*/
+
+.principal {
+  position: relative;
+  background-color: #feb4cd;
+  width: 100%;
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal-info {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 522px;
+}
+
+.principal-contenedor-img {
+  position: absolute;
+
+  top: 311px;
+
+  width: 72%;
+
+  height: 528px;
+}
+
+.contenedor-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 50% / 30%; /* Redondea solo las esquinas superior e inferior */
+}
+
+.raya {
     position: absolute;
-    width: 10rem;
-    left: 116px;
-    bottom: -387px;
+
+    width: 5rem;
+right: 0px;
+    
+    
+    bottom: 126px;
+}
+
+.hero-large-shape-img, .mujer-img, .personas-img{
+    display: none;
+}
+
+.start {
+  position: absolute;
+  left: -12px;
+  bottom: 91px;
+}
+
+.start-pequenna {
+  position: absolute;
+
+  width: 1.5rem;
+
+  left: 33px;
+
+  bottom: 255px;
+}
+
+.start-pequenna-dos {
+  position: absolute;
+  width: 1.5rem;
+
+  right: 16px;
+  
+  bottom: 54px;
+}
+
+.main-title {
+  z-index: 1;
+
+  font-family: "Gulfs Display", sans-serif;
+
+  color: #0061ff;
+
+  text-align: center;
+
+  font-size: 3rem;
+
+  line-height: 1;
+
+  letter-spacing: 4px;
+}
+
+.circle {
+  position: absolute;
+  width: 8rem;
+  left: 8px;
+  bottom: -322px;
 }
 
 /* Seccion nosotors*/
 
-.nosotros{
-    background-color: #fff35f;
+.nosotros {
+    background-color:#fff35f;
+    
     padding-top: 426px;
+    
     padding-left: calc(10% - 7px);
-    padding-right: 90px;
-}
-
-.content-info{
-    position: relative;
-    margin: 50px ;
-}
-
-
-.about-shape{
+    
+    padding-right: calc(10% - 7px);
+    
     display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.about-shape img{
-    width: 60px;
-    height: 60px;
+    
+    justify-content: center;
 }
 
 
-.content-info h1{
-    color: #fff35f;
-    font-size: 7rem;
-    font-family: "Gulfs Display", sans-serif;
-    -webkit-text-stroke: 1px #0061ff;
-    line-height: 0.8;
-    margin-bottom: 40px;
+.content-info {
+  position: relative;
+  margin: 34px;
 }
 
-.nosotros-parrafo{
-    font-family: sans-serif;
-    font-size: 2.1rem;
-    line-height: 1.3;
-    font-weight: bold;
+.about-shape {
+  display: flex;
+  justify-content: space-between;
 }
 
-.nosotros-nupcia{
-    display: flex;
-    align-items: start;
-    margin-bottom: 30px;
-
+.about-shape img {
+  width: 60px;
+  height: 60px;
 }
 
-.nupcia{
-    font-size: 1.3rem;
-    margin-top: 30px;
-    font-family: "Gulfs Display";
+.content-info h1 {
+  color: #fff35f;
+  font-size: 5.5rem;
+  font-family: "Gulfs Display", sans-serif;
+  -webkit-text-stroke: 3px #0061ff;
+  line-height: 0.8;
+  margin-bottom: 40px;
 }
 
-.rigns{
-    width: 100px;
+.nosotros-parrafo {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  font-weight: bold;
+  width: 358px;
 }
 
-.about-start{
-    width: 100px;
-    height: 97px;
+.nosotros-nupcia {
+  display: flex;
+  align-items: start;
+  margin-bottom: 30px;
 }
 
+.nupcia {
+  font-size: 1.1rem;
+  margin-top: 30px;
+  font-family: "Gulfs Display";
+}
+
+.rigns {
+    width: 75px;
+    margin-top: 10px;
+}
+
+.about-start {
+    width: 55px;
+
+    margin-top: 8px;
+}
 
 /* Principal foto fiesta */
-.img-fiesta{
-    position: relative;
-    width: 92%;
-    height: 520px;
-    padding-bottom: 100px;
-    min-width: 400px;
-    max-width: 665px;
+.img-fiesta {
+  position: relative;
+
+  width: 92%;
+
+  height: 520px;
+
+  padding-bottom: 100px;
+
+  min-width: 336px;
+
+  max-width: 691px;
+  margin-left: 31px;
 }
 /* ----- */
-.fiesta-uno{
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-    transform: rotate(-3deg); 
-    height: 100%;
+.fiesta-uno {
+  width: 79%;
+
+  margin: 0 auto;
+
+  padding: 10px;
+
+  background-color: white;
+
+  border: 1px solid black;
+
+  transform: rotate(-3deg);
+
+  height: 100%;
+
+  min-width: 144px;
+
+  position: absolute;
+
+  left: 26px;
+
+  height: 429px;
 }
 
-
-.fiesta-uno img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
+.fiesta-uno img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
-.fiesta-tres, .fiesta-dos{
-    position: absolute;
-    transform: rotate(-3deg);
-    background-color: #feb4cd;
-    border: 1px solid black;
+.fiesta-tres,
+.fiesta-dos {
+  position: absolute;
+  transform: rotate(-3deg);
+  background-color: #feb4cd;
+  border: 1px solid black;
 }
 
-.fiesta-dos{
-    width: 80%;
-    height: 423px;
-    bottom: 80px;
-    left: 45px;
+.fiesta-dos {
+  width: 80%;
+
+  height: 427px;
+
+  bottom: 76px;
+
+  left: 13px;
 }
 
-.fiesta-tres{
-    width: 80%;
-    height: 419px;
-    bottom: 62px;
-    left: 31px;
+.fiesta-tres {
+  width: 80%;
+  height: 419px;
+  bottom: 62px;
 }
-
 
 /* Chat */
-.chat{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    font-family: sans-serif;
-    font-weight: bold;
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
-    background-color: #fff35f;
-    position: fixed;
-    bottom: 0;
-    right: 124px;;
-    border: 1px solid black;
-    z-index: 2;
+.chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Anybody";
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #fff35f;
+ position: fixed; 
+  bottom: 14px;
+  border: 1px solid black;
+  z-index: 2;
+  left: calc(100% - 177px);
 }
-
-
-
-
-
-
-
-
 
 /* Precios */
 
-.precios{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4,1fr);
-    
-    
-}
-
-.construye, .horas{
-    
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    grid-column: 1/-1;
-    background-color: #feb4cd;
-    padding-top: 30px 20px 30px 20px;
-}
-
-.construye p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 50%;
-    color: #ff6542;
-    font-size: 4rem;
-    font-family: "Gulfs Display", sans-serif;
-    line-height: 1;
-}
-
-.content-horas{
-    width: 100%;
-    margin-top: 30px;
+.precios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 0.4fr 1fr  1fr 1.2fr 0.4fr;
+  width: 100%;
 }
 
 
+.construye,
+.horas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+  background-color: #feb4cd;
+  padding-top: 30px 20px 30px 20px;
+  border: 1px solid black;
+}
 
-.sesion, .video, .solo, .cabina{
-    font-family: "Gulfs Display";
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.construye div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70%;
+  font-size: 3rem;
+  color: #ff6542;
+  font-family: "Gulfs Display", sans-serif;
+  line-height: 1;
+}
+
+.content-horas {
+    width: 70%;
+    height: 185px;
+}
+
+.sesion,
+.video,
+.solo,
+.cabina {
+  font-family: "Gulfs Display";
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.sesion{
+    position: relative;
+}
+
+.pricing-rings-img{
+    position: absolute;
+    bottom: -50px;
+    right: -45px;
+    width: 138px;
 }
 
 
-.interrogante-sesion{
-    background-color: #ff6542;
-    color: #fff35f;
+/* Colores precio*/
+.sesion, .cabina{
+    background-color: #fff35f;
+}
+
+.solo{
+    background-color: #0061ff;
+}
+    /* ** */
+
+.interrogante-sesion, .interrogante-ceremonia, .interrogante-solo, .interrogante-fotos, .interrogante-film, .interrogante-mapa{
     font-family: sans-serif;
     font-weight: bold;
     padding: 3px 7px 3px 7px;
     border-radius: 100%;
     font-size: 1rem;
     vertical-align: middle;
-   
-   
-}
-.sesion p {
-   width: 100%;
-    color: #ff6542;
-    margin-bottom: 30px;
 }
 
+.interrogante-ceremonia, .interrogante-fotos{
+     background-color: #0061ff;
+     color: white;   
+}
 
-.horas p{
-    padding-top: 6px;
-    font-family: "Gulfs Display";
-    font-size: 2rem;
+.interrogante-mapa{
+    background-color: white;
+    color: black;
+}
+.interrogante-solo{
+    background-color: white;
+    color: #0061ff;   
+}
+
+.interrogante-sesion {
+  background-color: #ff6542;
+  color: #fff35f;
+}
+
+.interrogante-film{
+    background-color: #0247c2;
     color: #0061ff;
 }
 
 
-.horas-totales{
+.horas p {
+  font-family: "Gulfs Display";
+  font-size: 1.8rem;
+  color: #0061ff;
+}
+
+.horas-totales {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.title-horas,
+.titulo-sesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interrogante {
+  background-color: #0061ff;
+  color: #feb4cd;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 3px 7px 3px 7px;
+  border-radius: 100%;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+.numero-tres {
+  background-color: #0061ff;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 3px 7px 3px 7px;
+  border-radius: 100%;
+  font-size: 1rem;
+  margin-left: 5px;
+  border: 1px solid black;
+}
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+   
+    margin-top: 54px;
+    
+    height: 50px;
+
+}
+
+.slider-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  left: 8px;
+}
+
+.slider-hr {
+  height: 15px;
+  background-color: #fff35f;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.content-estado{
+  position: relative;
+
+  width: 180px;
+  height: 90px;
+  border-radius: 40%/80%;
+  border: 1px solid black;
+  box-shadow: 7px 7px 0px 1px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.content-img-estado {
+    left: 10px;
+    top: 8px;
+    position: relative;
+    width: 42%;
+    height: 84%;
+    border: 1px solid black;
+    border-radius: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+  }
+
+#content-uno{
+    background-color: #ff6542;
+}
+#content-dos{
+    background-color: #feb4cd;
+}
+#content-tres{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+#content-uno .content-img-estado{
+    background-color: #fff35f;
+}
+#content-dos .content-img-estado{
+    background-color: #0247c2;
+}
+
+.img-estado {
+  background-image: url("./img/cara-sesion.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  width: 89%;
+  height: 89%;
+  border: 1px solid black;
+  border-radius: 89%;
+  transform: rotate(-37deg);
 }
 
 
-.title-horas, .titulo-sesion{
+.titulo-sesion p, .titulo-video p, .titulo-cabina p, .titulo-solo p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.estado {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#estado-film{
+    color: #0247c2;
+}
+
+
+    /*Color textos*/
+.sesion p{
+      color: #ff6542;
+}
+.video p, .cabina p{
+    color: #0061ff;
+}
+.solo p{
+    color: white;
+}
+
+    /*   ***  */
+
+.knob{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+
+/*Galeria*/
+
+.galeria{
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.galeria-uno, .galeria-dos{
     display: flex;
+    justify-content: space-between;
+}
+
+.galeria-uno img, .galeria-dos img{
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.galeria-dos{
+    position: relative;
+}
+
+.barra-naranja{
+    position: absolute;
+    width: 322%;
+    height: 150px;
+    background-color: #ff6542;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 2500px;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+/* estado cabina*/
+.lupa-menos{
+    fill: #feb4cd;
+}
+
+.content-circulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #feb4cd;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.circulo{
+
+    width: 10px;
+    height:10px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+/**/
+
+/*Seccion mapa*/
+.content-mapa{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    justify-content: center;
+}
+
+.mapa-img-content{
+    position: relative;
+}
+
+.title-mapa{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.mapa-lugar{
+    font-family: "Gulfs Display";
+}
+
+.mapa-seleccion{
+    font-family: sans-serif;
+}
+.img-mapa{
+    margin-top: 20px;
+    width: 413px;
+    
+}
+.img-camara{
+    position: absolute;
+
+    bottom: -99px;
+    
+    width: 150px;
+    
+    right: 0;
+}
+
+.content-total{
+    background-color: #ff6542;
+    line-height: 1;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.total-info{
+    width: 65%;
+    font-family: "Gulfs Display";
+}
+.total{
+    font-size: 0.8rem;
+    color: #feb4cd;
+}
+.total-precio{
+    font-size: 2rem;
+    color: #fff35f;
+}
+
+/***/
+
+/* Contacto */
+
+
+.contacto{
+    width: 100%;
+    background-color: #feb4cd;
+    padding-bottom: 70px;
+}
+
+.content-contacto-img{
+    display: flex;
+    justify-content: center;
+    height: 594px;
+}
+.contacto-img{
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 77px;
+    min-width: 450px;
+}
+
+.contacto-img img{
+    position: absolute;
+}
+
+.pareja{
+    z-index: 1;
+    width: 85%;
+}
+.yay{
+    top: -58px;
+    max-width: 25%;
+}
+
+.musica{
+    top: -51px;
+    max-width: 35%;
+    left: 0;
+}
+
+.mano{
+    right: 6px;
+    width: 23%;
+    top: -37px;
+}
+
+.starts{
+    right: 12px;
+  top: 92px;
+  width: 10%;
+}
+
+.annos{
+    right: 0;
+    width: 20%;
+    top: 142px;
+}
+
+.loop{
+    right: 48px;
+  top: 241px;
+  width: 16%;
+  z-index: 2;
+}
+
+.copas{
+    bottom: 48px;
+    width: 20%;
+    right: 0;
+    z-index: 2;
+}
+.loop-wide{
+    left: 59px;
+    bottom: 43px;
+  z-index: 2;
+  width: 29%;
+}
+
+.cara{
+    bottom: 37px;
+  width: 16%;
+  left: 52px;
+  z-index: 3;
+}
+
+.corazon{
+    left: -29px;
+  top: 170px;
+  width: 14%;
+}
+
+.caja{
+    left: 2px;
+  bottom: 143px;
+  width: 20%;
+}
+
+.content-consulta-fecha{
+    display: flex;
+    justify-content: center;
+}
+.consulta-fecha{
+    width: 70%;
+}
+
+.consulta-fecha h2{
+    color: #0061ff;
+    font-size: 2.8rem;
+    font-family: "Gulfs Display";
+    line-height: 0.8;
+    margin-bottom: 20px;
+}
+
+.consulta-fecha p{
+    font-size: 1rem;
+    font-family: "Anybody";
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+
+.content-barra{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.interrogante{
-    background-color: #0061ff;
-    color: #feb4cd;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 3px 7px 3px 7px;
-    border-radius: 100%;
-    font-size: 1rem;
-    margin-left: 5px;
+.content-barra-info{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
 }
-.numero-tres{
-    background-color: #0061ff;
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 3px 7px 3px 7px;
-    border-radius: 100%;
-    font-size: 1rem;
-    margin-left: 5px;
-    border: 1px solid black;
+.content-barra-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    max-width: 791px;
+    width: 100%;
+}
+.content-barra p{
+    color: #ff6542;
+    font-family: "Gulfs Display";
+    font-size: 1.5rem;
+   
+    align-items: center;
 }
 
-.slider{
-    position: relative;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 80px;
+.footer-arrow{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #ff6542;
+    margin-left: 10px;
+
+}
+
+.content-barra-imgs{
+    display: flex;
+    align-items: center;
+}
+    /*hr*/
+.barra {
+    width: 70%;
+    height: 6px;
+    background-color: #ff6542;
+    border-radius: 4px;
+    margin-top: 20px;
+    border: none;
+    margin-bottom: 50px;
+}
+
+
+
+    /* tabla redes */
+
+    .content-tabla{
+        background-color: white;
+        display: grid;
+        grid-template-columns: minmax(auto,70%) repeat(3, 1fr);
+        grid-template-rows: repeat(2, 2fr);
+        margin: 0 auto;
+        font-family: "Anybody";
+        font-weight: bold;
+        box-shadow: -3px 3px 0px 3px black;
+        width: 70%;
+        min-width: 375px;
+      
+    }
+
+    .content-tabla div{
+        border: 1px solid black;
+    }
+    
+    .sigue-redes{
+      
+        grid-column: 1/-1;
+    display: grid;
+    place-content: center;
+    justify-content: start;
+
+
+    }
+
+    .sigue-redes p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin-left: 16px;
+    }
+
+    
+.icon-facebook , .icon-insta , .icon-email {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    }
+
+
+.icon-facebook a, .icon-insta a, .icon-email a{
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    width: 37px;
+    height: 37px;
+    border: 1px solid black;
+    
+}
+.icon-facebook a{
+    background: #9ef3f3;;
+}
+.icon-insta a{
+    background: #feb4cd;
+}
+.icon-email a{
+    background: #fff35f;
+}
+
+ .icon-insta img, .icon-email img{
+    width: 18px;
+}
+.icon-facebook img{
+    width: 10px;
+}
+
+.politicas{
+    display: grid;
+    place-content: center;
+    justify-content: start;
+    font-size: 0.8rem;
+}
+
+.politicas p {
+    margin-left: 16px;
+}
+
+
+.barra-final{
+    background-color: black;
+    width: 100%;
     height: 50px;
 }
 
 
-.slider-img{
+
+@media (max-width: 500px) {
+  .main-title {
+    font-size: 2.2rem;
+  }
+
+  .principal-contenedor-img {
+    top: 296px;
+  }
+
+  .start-pequenna {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    bottom: 0;
-    left: 8px;
-}
 
-hr{
-    height: 15px;
-    background-color: #fff35f;
-    border-radius: 5px;
-}
+    width: 1rem;
 
+    left: 40px;
 
-.content-sesion{
-    position: relative;
-    background-color: #ff6542;
-    width: 180px;
-    height: 90px;
-    border-radius: 40%/80%;
-    border: 1px solid black;
-    box-shadow: 7px 7px 0px 1px rgb(0, 0, 0);
-}
+    bottom: 255px;
+  }
 
-.content-img-sesion{
+  .start {
+    width: 2rem;
+
     left: 10px;
-    top: 8px;
-    position: relative;
-    width: 70px;
-    height: 70px;
-    border: 1px solid black;
-    border-radius: 100%;
-    background: #fff35f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    bottom: 150px;
+  }
+
+  .raya{
+    width: 5rem;
+
+    right: 2px;
+
+    bottom: 163px;
+  }
+
+  .start-pequenna-dos{
+    bottom: 95px;
+  }
+
+  .circle{
+    width: 7rem;
+
+    left: 10px;
+
+    bottom: -321px;
+  }
+
+  .about-shape{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .about-shape img {
+
+    width: 46px;
+}
+.nosotros{
+    padding-top: 350px;
 }
 
-.img-sesion{
-    background-image: url("./img/cara-sesion.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    width: 89%;
-    height: 89%;
-    border: 1px solid black;
-    border-radius: 89%;
-    transform: rotate(-37deg);
+.content-info h1{
+    font-size: 4.5rem;
+}
+
+.nosotros-parrafo{
+    font-size: 1.1rem;
+    width: auto;
+}
+
+.nupcia{
+    font-size: 0.7rem;
+}
+
+.content-info{
+    width: 263px;
+}
+
+.rigns{
+
+margin-top: 19px;
+}
+
+.construye div{
+    min-width: 300px;
+    font-size: 2.5rem;
+}
+.content-horas{
+    width: 74%;
+}
+
+.sesion, .video, .solo, .cabina, .horas p {
+    font-size: 1.2rem;
+}
+
+.content-estado{
+    width: 139px;
+    height: 69px;
+}
+
+.knob{
+    width: 85px;
+}
+
+
+.title-mapa{
+    font-size: 0.8rem;
+}
+
+
+ .interrogante-mapa{
+    padding: 1px 4px 1px 4px;
+    font-size: 0.6rem;
+}
+    
+.img-mapa{
+    width: 320px;
+}
+
+.img-camara{
+    width: 126px;
+}
+
+.drinks{
+    bottom: 20px;
+}
+
+.contacto-img{
+    min-width:391px;
+}
+
+.consulta-fecha{
+    width: 86%;
+}
+
+.pricing-rings-img{
+    bottom: -29px;
+    right: -36px;
+    width: 100px;
+}
+
+
+.starts{
+    right: 34px;
+  top: 92px;
+  width: 9%;
+}
+
+.annos{
+    right: 25px;
+  width: 18%;
+}
+
+.mano{
+    right: 36px;
+  width: 19%;
+}
+
+.copas{
+    bottom: 70px;
+  width: 17%;
+  right: 35px;
+}
+
+.chat{
+    left: calc(100% - 128px);
+}
+.corazon{
+    left: 6px;
+}
+
+.galeria-uno img, .galeria-dos img{
+    height: 200px;
+}
+
+.barra-naranja{
+    width: 1724px;
 }
 
 
 
 
 
+}
+
+@media (min-width:760px) {
+
+    body{
+        min-width: 1137px;
+    };
+
+    header{
+        display: grid;
+        place-items: center;
+    }
+
+    .contenedor-img{
+        height: 117%;
+    }
+    .navbar{
+        min-width: 700px;
+        max-width: 1500px;
+        width: 90%;
+    }
+
+
+    .contacto-img{
+        min-width: 522px;
+    }
+
+    .main-title{
+        font-size: 4rem;
+    }
+    .principal-info{
+        padding-top: 141px;
+        align-items: normal;
+    }
+   
+
+    .label-hamburguesa{
+        display: none;
+    }
+
+
+    .about-shape-info div{
+        display: block;
+    }
+
+    .ul-links{
+        height: 100px;
+        top: 0;
+        flex-direction: row;
+        font-size: 1rem;
+        justify-content: end;
+        margin-right: 10px;
+    }
+
+    .ul-links li{
+        justify-content: end;
+    }
+
+    .circle{
+        left: 585px;
+        bottom: -67px;
+    }
+
+    .raya{
+        right: -59px;
+    }
+
+    .hero-large-shape-img, .mujer-img,.personas-img {
+        position: absolute;
+            display: block;
+        }
+    .hero-large-shape-img{
+    
+        bottom: -49px;
+        width: 100px;
+        z-index: 1;
+        left: 34px;
+    }
+
+    .personas-img {
+        width: 300px;
+        border: 2px solid black;
+        border-radius: 30px;
+        left: -334px;
+        bottom: -268px;
+        
+    }
+
+    .mujer-img{
+        border: 2px solid black;
+        border-radius: 30px;
+        width: 235px;
+        right: -265px;
+        bottom: 83px;
+  
+    }
+
+
+    .containt-nosotros{
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    .containt-nosotros h1{
+        font-size: 8rem;
+    }
+
+    .about-shape-info div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .about-shape-info div p{
+        font-size: 1.2rem;
+        font-family: "Anybody";
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    .about-shape-info div:nth-child(1) {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        
+    }
+
+    .about-shape-info div:nth-child(2) {
+        position: absolute;
+        top: -30px;
+        right: 0;
+    }
+    .about-shape-info div:nth-child(3) {
+        position: absolute;
+        right: -10px;
+        bottom: 20px;
+    }
+
+    .about-shape-info div:nth-child(4) {
+        position: absolute;
+        left: -10px;
+        bottom: 20px;
+    }
+
+    .about-shape{
+        display: none;
+    }
+
+    .nosotros-parrafo{
+        width: 100%;
+    }
+
+    .img-fiesta{
+        min-width: 440px;
+    }
+
+    .contacto{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 208px;
+    }
+
+    .content-consulta-fecha {
+        display: inline;
+    }
+   
+    .content-barra-info, .barra{
+        width: 100%;
+
+    }
+
+    .precios{
+        display: grid;
+        grid-template-columns:  repeat(5, 0.6fr);
+        grid-template-rows:  repeat(4, 0.6fr);
+
+    }
+
+    .construye{
+        grid-column: 1/3;
+       
+    }
+
+    .construye p{
+        margin-left: 22px;
+        font-size: 2rem;
+    }
+    .sesion{
+        grid-column: 3;
+        grid-row: 1/3;
+    }
+    .video{
+        grid-column: 4;
+        grid-row: 1/3;
+    }
+    .solo{
+        grid-column: 5;
+        grid-row: 1/3;
+    }
+    .horas{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    
+    .envia{
+        border: 1px solid black;
+        background-color: #feb4cd;
+        grid-column:4/-1;
+        grid-row: 4/-1;
+    }
+
+    .cabina{
+        grid-column: 1;
+        grid-row: 3/-1;
+    }
+
+    .content-mapa{
+        grid-column: 2/4;
+        grid-row: 3/-1;
+    }
+
+    .content-total{
+        grid-column: 4/6;
+        grid-row: 3/4;
+    }
+    .total{
+        font-size: 1rem;
+    }
+
+    .title-mapa{
+        margin-top: 45px;
+    }
+
+    .img-camara {
+      
+        top: -119px;
+        right: -28vw;
+        width: 107px;
+    }
+    .pricing-rings-img {
+        right: 15vw;
+    }
+
+    .total-precio{
+        font-size: 4rem;
+    }
+
+    .content-barra-envia{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .title-paquete{
+        line-height: 1;
+        font-size: 1.5rem;
+        font-family: "Gulfs Display";
+        margin-bottom: 30px;
+    }
+    
+    .content-envia-info{
+        color: #ff6542;
+        font-family: "AnyBody";
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .barra{
+        margin-top: 11px;
+        margin-bottom: 37px;
+    }
+
+    .consulta-fecha{
+        width: 100%;
+    }
+
+
+    .content-envia{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+   
+ 
+        
+    }
+
+    .presiona{
+        display: grid;
+        place-content: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        text-align: center;
+        font-family: "Anybody";
+        font-weight: bold;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: #ff6542;
+        border: 1px solid black;
+        box-shadow: 1px 1px 0px 1px black;
+        margin-top: 50px;
+       
+    }
+
+    .barra-final{
+        display: none;
+    }
+
+    .content-tabla{
+        grid-template-columns: minmax(auto, 1.4fr) minmax(auto, 1.8fr) repeat(3, auto);
+        grid-template-rows: 1fr;
+        width: 100%;
+    
+    }
+    .sigue-redes{
+        grid-column: 1;
+    }
+
+    .sigue-redes p{
+        font-size: 0.6rem;
+        margin-right: 20px;
+    }
+
+    .politicas{
+        grid-column: 2;
+    }
+
+    .politicas p {
+        font-size: 0.6rem;
+    }
+
+    .icon-facebook, .icon-insta, .icon-email {
+
+        padding: 5px;
 
 
 
+}
+
+.copas {
+    bottom: 16px;
+    right: -12px;
+    
+}
+
+.loop-wide {
+
+    bottom: -19px;
+}
 
 
+.cara{
+    bottom: -29px;
+}
 
-
-
-
-
-
-
-
+}
 
 
 
