@@ -16,7 +16,7 @@ El proyecto se divide en 6 secciones
 
 
 ### Menu de navegación 
-!(/imagenes/MenuEscritorio.png)
+!/imagenes/MenuEscritorio.png
 
 TEXT 2
 
