@@ -16,8 +16,4 @@ El proyecto se divide en 6 secciones
 
 
 ### Menu de navegación 
-!/imagenes/MenuEscritorio.png
-
-TEXT 2
-
-# Links to the example headings above
+![MenuEscritorio](https://github.com/user-attachments/assets/d3349701-6c24-431b-8204-7fd36cde20c8)
