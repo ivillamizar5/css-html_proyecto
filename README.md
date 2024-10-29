@@ -2,7 +2,7 @@
 
 
 ## CONTEXTO
-Este  sitio es de una sola que consiste en diseñar el sitio web responsive de acuerdo al diseño y especificaciones que se dieron [AQUI](https://drive.google.com/drive/folders/1U1g5m1FwzomQqb64JJTpTvKWgki2JZe6)).
+Este  sitio es de una sola que consiste en diseñar el sitio web responsive de acuerdo a las especificaciones que se dieron [AQUI](https://drive.google.com/drive/folders/1U1g5m1FwzomQqb64JJTpTvKWgki2JZe6)).
 
 El proyecto se divide en 6 secciones
 1. Menu de navegación encontrado en el header
